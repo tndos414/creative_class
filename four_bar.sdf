@@ -1,0 +1,144 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name='4linkage'>
+
+    <link name="link1">
+        <gravity>0</gravity>
+        <visual name="link1">
+            <geometry>
+                <mesh>
+                    <uri>model://4linkage/meshes/link1.dae</uri>
+                    <scale>1 1 1</scale>
+                </mesh>
+            </geometry>
+        </visual>
+        <collision name='collision'>
+            <geometry>
+                <mesh>
+                    <uri>model://4linkage/meshes/link1.dae</uri>
+                    <scale>1 1 1</scale>
+                </mesh>
+            </geometry>
+      </collision>
+    </link>
+
+    <joint name="12" type="revolute">
+        <pose>0.2 0.1 0 0 0 0</pose>
+        <parent>link1</parent>
+        <child>link2</child>
+        <axis>
+            <xyz>0 0 1</xyz>
+            
+        </axis>
+    </joint>
+
+    <link name="link2">
+        <gravity>0</gravity>
+        <visual name="link2">   
+            <geometry>
+                <mesh>
+                    <uri>model://4linkage/meshes/link2.dae</uri>
+                    <scale>1 1 1</scale>
+                </mesh>
+            </geometry>
+        </visual>
+        <collision name='collision'>
+            <geometry>
+                <mesh>
+                    <uri>model://4linkage/meshes/link2.dae</uri>
+                    <scale>1 1 1</scale>
+                </mesh>
+            </geometry>
+      </collision>
+    </link>
+
+    <joint name="23" type="revolute">
+        <pose>0.2 -0.1 0 0 0 0</pose>
+        <parent>link2</parent>
+        <child>link3</child>
+        <axis>
+            <xyz>0 0 1</xyz>
+           
+        </axis>
+    </joint>
+
+    <link name="link3">
+        <gravity>0</gravity>    
+        <visual name="link3">
+            <geometry>
+                <mesh>
+                    <uri>model://4linkage/meshes/link3.dae</uri>
+                    <scale>1 1 1</scale>
+                </mesh>
+            </geometry>
+        </visual>
+        <collision name='collision'>
+            <geometry>
+                <mesh>
+                    <uri>model://4linkage/meshes/link3.dae</uri>
+                    <scale>1 1 1</scale>
+                </mesh>
+            </geometry>
+        <surface>
+            <friction>
+                <ode>
+                    <mu>0</mu>
+                    <mu2>0</mu2>
+                    <slip1>1.0</slip1>
+                    <slip2>1.0</slip2>
+                </ode>
+            </friction>
+        </surface>
+      </collision>
+    </link>
+
+    <joint name="34" type="revolute">
+        <pose>0 -0.1 0 0 0 0</pose>
+        <parent>link3</parent>
+        <child>link4</child>
+        <axis>
+            <xyz>0 0 1</xyz>
+           
+        </axis>
+    </joint>
+
+    <link name="link4">
+        <gravity>0</gravity>
+        <visual name="link4">
+            <geometry>
+                <mesh>
+                    <uri>model://4linkage/meshes/link4.dae</uri>
+                    <scale>1 1 1</scale>
+                </mesh>
+            </geometry>
+        </visual>
+        <collision name='collision'>
+            <geometry>
+                <mesh>
+                    <uri>model://4linkage/meshes/link4.dae</uri>
+                    <scale>1 1 1</scale>
+                </mesh>
+            </geometry>
+      </collision>
+    </link>
+
+
+	<joint name="41" type="revolute">
+        <pose>0 0.1 0 0 0 0</pose>
+        <parent>link4</parent>
+        <child>link1</child>
+        <axis>
+            <xyz>0 0 1</xyz>
+          
+        </axis>
+    </joint>
+
+
+    
+  </model>
+</sdf>
+
+# 결과 리스트를 이용하여 텍스트 파일을 작성합니다.
+output_file_path = "output.txt"
+with open(output_file_path, "w") as f:
+    f.writelines(result)

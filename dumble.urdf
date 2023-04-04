@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<robot name="ladder">
+	<material name="black">
+		<color rgba="0 0 0 1.0"/>
+	</material>
+    <material name="white">
+        <color rgba="0.0 0.0 1.0 0.0"/>
+    </material>
+
+    <link name="body">
+        <origin xyz="0.0 0.0 0.0"/>
+        <visual>
+            <geometry>
+                <mesh filename="package://urdf_tutorial/meshes/visual/body.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://urdf_tutorial/meshes/collision/body.dae"/>
+            </geometry>
+        </collision>
+    </link>
+    
+    <link name="power_top">
+        <visual>
+            <geometry>
+                <mesh filename="package://urdf_tutorial/meshes/visual/power_top.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://urdf_tutorial/meshes/collision/power_top.dae"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="body_to_power_top" type="revolute">
+        <origin xyz="0.0 -0.02 0.03" rpy="0.0 0.0 0.0"/>
+        <parent link="body"/>
+        <child link="power_top"/>
+         <axis xyz="0 0 1"/>
+    <limit effort="100" lower="0.0" upper="0.52359879" velocity="3.14159274"/>
+    </joint>
+    <link name="connecting_top">
+        <visual>
+            <geometry>
+                <mesh filename="package://urdf_tutorial/meshes/visual/connector_top.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://urdf_tutorial/meshes/collision/connector_top.dae"/>
+            </geometry>
+        </collision>
+    </link>
+    <joint name="power_to_connect_top" type="revolute">
+        <origin xyz="0.0 -0.01 0.005" rpy="0.0 0.0 0.0"/>
+        <parent link="power_top"/>
+        <child link="connecting_top"/>
+         <axis xyz="0 0 1"/>
+        <limit effort="100" lower="0.0" upper="0.52359879" velocity="3.14159274"/>
+    </joint>
+
+    <link name="connecting_arm">
+        <visual>
+            <geometry>
+                <mesh filename="package://urdf_tutorial/meshes/visual/connector_arm.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://urdf_tutorial/meshes/collision/connector_arm.dae"/>
+            </geometry>
+        </collision>
+    </link>
+    <joint name="connector_top_to_arm" type="revolute">
+        <origin xyz="0.0 -0.02 0.02" rpy="0.0 0.0 0.0"/>
+        <parent link="connecting_top"/>
+        <child link="connecting_arm"/>
+         <axis xyz="0 0 1"/>
+        <limit effort="100" lower="0.0" upper="0.52359879" velocity="3.14159274"/>
+    </joint>
+    <link name="fixed_top">
+        <visual>
+            <geometry>
+                <mesh filename="package://urdf_tutorial/meshes/visual/fixed_top.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://urdf_tutorial/meshes/collision/fixed_top.dae"/>
+            </geometry>
+        </collision>
+    </link>
+    <joint name="connector_top_to_fixed_top" type="revolute">
+        <origin xyz="0.0 -0.02 -0.005" rpy="0.0 0.0 0.0"/>
+        <parent link="connecting_top"/>
+        <child link="fixed_top"/>
+         <axis xyz="0 0 1"/>
+        <limit effort="100" lower="0.0" upper="0.52359879" velocity="3.14159274"/>
+    </joint>
+    <link name="hanging_arm">
+        <visual>
+            <geometry>
+                <mesh filename="package://urdf_tutorial/meshes/visual/hanging_arm.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://urdf_tutorial/meshes/collision/hanging_arm.dae"/>
+            </geometry>
+        </collision>
+    </link>
+     <joint name="connecting_arm_to_haning_arm" type="revolute">
+        <origin xyz="0.0 -0.035 -0.015" rpy="0.0 0.0 0.0"/>
+        <parent link="connecting_arm"/>
+        <child link="hanging_arm"/>
+         <axis xyz="0 0 1"/>
+        <limit effort="100" lower="0.0" upper="0.52359879" velocity="3.14159274"/>
+    </joint>
+
+
+</robot>

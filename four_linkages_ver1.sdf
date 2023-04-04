@@ -1,0 +1,221 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name='four_bar_arms_ver1'>
+
+    <link name="body_link1">
+        <gravity>0</gravity>
+        <visual name="link1">
+            <geometry>
+                <mesh>
+                    <uri>model://four_bar_arms_ver1/meshes/collision/body_link1.dae</uri>
+                    <scale>1 1 1</scale>
+                </mesh>
+            </geometry>
+             <material>
+                <script>
+                    <uri>file://media/materials/scripts/gazebo.material</uri>
+                    <name>Gazebo/Yellow</name>
+                </script>
+            </material>
+        </visual>
+        <collision name='collision'>
+            <geometry>
+                <mesh>
+                    <uri>model://four_bar_arms_ver1/meshes/collision/body_link1.dae</uri>
+                    <scale>1 1 1</scale>
+                </mesh>
+            </geometry>
+      </collision>
+    </link>
+
+    <joint name="body12" type="revolute">
+        <pose>0.025 0 0 0 0 0</pose>
+        <parent>body_link1</parent>
+        <child>body_link2</child>
+        <limit effort="100" lower="0.0" upper="0.52359879" velocity="3.14159274"/>
+        <axis>
+            <xyz>0 0 1</xyz>
+            
+        </axis>
+    </joint>
+
+    <link name="body_link2">
+        <gravity>0</gravity>
+        <visual name="link2">   
+            <geometry>
+                <mesh>
+                    <uri>model://four_bar_arms_ver1/meshes/collision/body_link2.dae</uri>
+                    <scale>1 1 1</scale>
+                </mesh>
+            </geometry>
+             <material>
+                <script>
+                    <uri>file://media/materials/scripts/gazebo.material</uri>
+                    <name>Gazebo/Red</name>
+                </script>
+            </material>
+        </visual>
+        <collision name='collision'>
+            <geometry>
+                <mesh>
+                    <uri>model://four_bar_arms_ver1/meshes/collision/body_link2.dae</uri>
+                    <scale>1 1 1</scale>
+                </mesh>
+            </geometry>
+      </collision>
+    </link>
+
+    <joint name="body23" type="revolute">
+        <pose>0 -0.0425 0 0 0 0</pose>
+        <parent>body_link2</parent>
+        <child>body_link3</child>
+        <axis>
+            <xyz>0 0 1</xyz>
+           
+        </axis>
+    </joint>
+
+    <link name="body_link3">
+        <gravity>0</gravity>    
+        <visual name="link3">
+            <geometry>
+                <mesh>
+                    <uri>model://four_bar_arms_ver1/meshes/collision/body_link3.dae</uri>
+                    <scale>1 1 1</scale>
+                </mesh>
+            </geometry>
+             <material>
+                <script>
+                    <uri>file://media/materials/scripts/gazebo.material</uri>
+                    <name>Gazebo/Blue</name>
+                </script>
+            </material>
+        </visual>
+        <collision name='collision'>
+            <geometry>
+                <mesh>
+                    <uri>model://four_bar_arms_ver1/meshes/collision/body_link3.dae</uri>
+                    <scale>1 1 1</scale>
+                </mesh>
+            </geometry>
+        <surface>
+            <friction>
+                <ode>
+                    <mu>0</mu>
+                    <mu2>0</mu2>
+                    <slip1>1.0</slip1>
+                    <slip2>1.0</slip2>
+                </ode>
+            </friction>
+        </surface>
+      </collision>
+    </link>
+
+    <joint name="body34" type="revolute">
+        <pose>-0.025 0 0 0 0 0</pose>
+        <parent>body_link3</parent>
+        <child>body_link4</child>
+        <axis>
+            <xyz>0 0 1</xyz>
+           
+        </axis>
+    </joint>
+
+    <link name="body_link4">
+        <gravity>0</gravity>
+        <visual name="link4">
+            <geometry>
+                <mesh>
+                    <uri>model://four_bar_arms_ver1/meshes/collision/body_link4.dae</uri>
+                    <scale>1 1 1</scale>
+                </mesh>
+            </geometry>
+        </visual>
+        <collision name='collision'>
+            <geometry>
+                <mesh>
+                    <uri>model://four_bar_arms_ver1/meshes/collision/body_link4.dae</uri>
+                    <scale>1 1 1</scale>
+                </mesh>
+            </geometry>
+      </collision>
+    </link>
+
+
+	<joint name="body41" type="revolute">
+        <pose>0 0.0425 0 0 0 0</pose>
+        <parent>body_link4</parent>
+        <child>body_link1</child>
+        <limit effort="100" lower="-0.52359879" upper="0" velocity="3.14159274"/>
+        <axis>
+            <xyz>0 0 1</xyz>
+        </axis>
+    </joint>
+
+    <link name="hand_link1">
+        <gravity>0</gravity>
+        <visual name="link2">   
+            <geometry>
+                <mesh>
+                    <uri>model://four_bar_arms_ver1/meshes/collision/hand_link1.dae</uri>
+                    <scale>1 1 1</scale>
+                </mesh>
+            </geometry>
+        </visual>
+        <collision name='collision'>
+            <geometry>
+                <mesh>
+                    <uri>model://four_bar_arms_ver1/meshes/collision/hand_link1.dae</uri>
+                    <scale>1 1 1</scale>
+                </mesh>
+            </geometry>
+      </collision>
+    </link>
+ß
+
+    <link name="hand_link2">
+        <gravity>0</gravity>
+        <visual name="link2">   
+            <geometry>
+                <mesh>
+                    <uri>model://four_bar_arms_ver1/meshes/collision/hand_link2.dae</uri>
+                    <scale>1 1 1</scale>
+                </mesh>
+            </geometry>
+        </visual>
+        <collision name='collision'>
+            <geometry>
+                <mesh>
+                    <uri>model://four_bar_arms_ver1/meshes/collision/hand_link2.dae</uri>
+                    <scale>1 1 1</scale>
+                </mesh>
+            </geometry>
+      </collision>
+    </link>
+
+    
+
+    <link name="hand_link3">
+        <gravity>0</gravity>
+        <visual name="link2">   
+            <geometry>
+                <mesh>
+                    <uri>model://four_bar_arms_ver1/meshes/collision/hand_link3.dae</uri>
+                    <scale>1 1 1</scale>
+                </mesh>
+            </geometry>
+        </visual>
+        <collision name='collision'>
+            <geometry>
+                <mesh>
+                    <uri>model://four_bar_arms_ver1/meshes/collision/hand_link3.dae</uri>
+                    <scale>1 1 1</scale>
+                </mesh>
+            </geometry>
+      </collision>
+    </link>
+
+    
+    
+  </model>
+</sdf>

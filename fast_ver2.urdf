@@ -1,0 +1,259 @@
+<?xml version="1.0"?>
+<robot name="dumble">
+	<material name="black">
+		<color rgba="0 0 0 1.0"/>
+	</material>
+    <material name="white">
+        <color rgba="0.0 0.0 1.0 0.0"/>
+    </material>
+
+    <link name="map">
+        <visual>
+            <origin rpy="0.0 0 0" xyz="0 0 0"/>
+        </visual>
+    </link>
+
+       <joint name="body_to_power_bottom" type="continuous">
+       <origin rpy="0 0 0" xyz="0 0 0.01"/>
+		<parent link="body"/>
+		<child link="power_bottom"/>
+        <axis xyz="-1.0 0 0"/>
+   </joint>
+
+   <joint name="body_to_power_top" type="continuous">
+       <origin rpy="0 0 0" xyz="0 0 0.02"/>
+		<parent link="body"/>
+		<child link="power_top"/>
+   </joint>
+
+ 
+
+   <joint name="map_to_base" type="fixed">
+       <origin rpy="0 0 0" xyz="0 0 0"/>
+		<parent link="map"/>
+		<child link="body"/>
+   </joint>
+
+   <link name="body">
+        <visual>
+		<origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+               <mesh filename="package://urdf_tutorial/meshes/visual/body.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+	<collision>
+		<origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+                <mesh filename="package://urdf_tutorial/meshes/collision/body.dae"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="power_top">
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 -0.02"/>
+            <geometry>
+                    <mesh filename="package://urdf_tutorial/meshes/visual/power_top.dae"/>
+                    <material name="black"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://urdf_tutorial/meshes/collision/power_top.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="power_top_to_connector_top" type="revolute">
+       <origin rpy="0 0 0" xyz="0 0 0.01"/>
+		<limit effort="1000.0" lower="0.0" upper="0.548" velocity="0.5"/>
+		<parent link="power_top"/>
+		<child link="connector_top"/>
+		<axis xyz="1.0 0.0 0.0"/>
+   </joint>
+
+    <link name="connector_top">
+        <visual>
+            <origin rpy ="0 0 0" xyz="0 0 -0.03"/>
+            <geometry>
+                    <mesh filename="package://urdf_tutorial/meshes/visual/connector_top.dae"/>
+                    <material name="black"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://urdf_tutorial/meshes/collision/connector_top.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="connector_top_to_fixed_top" type="planar">
+       <origin rpy="0 0 0" xyz="0 0.04 0.02"/>
+		<limit effort="1000.0" lower="0.0" upper="0.548" velocity="0.5"/>
+		<parent link="connector_top"/>
+		<child link="fixed_top"/>
+		<axis xyz="1.0 0.0 0.0"/>
+   </joint>
+
+    <link name="fixed_top">
+        <visual>
+	        <origin rpy="0 0 0" xyz="0 -0.04 -0.05"/>
+            <geometry>
+                    <mesh filename="package://urdf_tutorial/meshes/visual/fixed_top.dae"/>
+                    <material name="black"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://urdf_tutorial/meshes/collision/fixed_top.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="connector_top_to_arm" type="fixed">
+       <origin rpy="0 0 0" xyz="0 -0.04 -0.05"/>
+		<limit effort="1000.0" lower="0.0" upper="0.548" velocity="0.5"/>
+		<parent link="connector_arm"/>
+		<child link="hanging_arm"/>
+		<axis xyz="1.0 0.0 0.0"/>
+   </joint>
+
+
+    <link name="connector_arm">
+        <visual>
+	        <origin rpy="0 0 0" xyz="0 -0.04 -0.05"/>
+            <geometry>
+                    <mesh filename="package://urdf_tutorial/meshes/visual/connector_arm.dae"/>
+                    <material name="black"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://urdf_tutorial/meshes/collision/connector_arm.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="connector_arm_to_hanging_arm" type="fixed">
+       <origin rpy="0 0 0" xyz="0 0 0"/>
+		<limit effort="1000.0" lower="0.0" upper="0.548" velocity="0.5"/>
+		<parent link="connector_arm"/>
+		<child link="hanging_arm"/>
+		<axis xyz="1.0 0.0 0.0"/>
+   </joint>    
+
+    <link name="hanging_arm">
+        <origin rpy="0 0 0" xyz="0 0.04 -0.03"/>
+        <visual>
+            <geometry>
+                    <mesh filename="package://urdf_tutorial/meshes/visual/hanging_arm.dae"/>
+                    <material name="black"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://urdf_tutorial/meshes/collision/hanging_arm.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="hanging_arm_to_fixed_bottom" type="fixed">
+       <origin rpy="0 0 0" xyz="0 0 0"/>
+		<limit effort="1000.0" lower="0.0" upper="0.548" velocity="0.5"/>
+		<parent link="fixed_bottom"/>
+		<child link="hanging_arm"/>
+		<axis xyz="1.0 0.0 0.0"/>
+   </joint>
+
+	
+
+    <link name="fixed_bottom">
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+                    <mesh filename="package://urdf_tutorial/meshes/visual/fixed_bottom.dae"/>
+                    <material name="black"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://urdf_tutorial/meshes/collision/fixed_bottom.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="fixed_bottom_to_connector_bottom" type="fixed">
+       <origin rpy="0 0 0" xyz="0 0 0"/>
+		<limit effort="1000.0" lower="0.0" upper="0.548" velocity="0.5"/>
+		<parent link="connector_bottom"/>
+		<child link="fixed_bottom"/>
+		<axis xyz="1.0 0.0 0.0"/>
+   </joint>
+    
+     <link name="connector_bottom">
+	    <origin rpy=" 0 0 0" xyz="0 0 0"/>
+        <visual>
+            <geometry>
+                    <mesh filename="package://urdf_tutorial/meshes/visual/connector_bottom.dae"/>
+                    <material name="black"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://urdf_tutorial/meshes/collision/connector_bottom.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    
+    <joint name="connector_bottom_to_power_bottom" type="continuous">
+       <origin rpy="0 0 0" xyz="0 0 0"/>
+		<limit effort="1000.0" lower="0.0" upper="0.548" velocity="0.5"/>
+		<parent link="power_bottom"/>
+		<child link="connector_bottom"/>
+		<axis xyz="-1.0 0.0 0.0"/>
+   </joint>
+
+    <link name="power_bottom">
+        <visual>
+		<origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+                    <mesh filename="package://urdf_tutorial/meshes/visual/power_bottom.dae"/>
+                    <material name="black"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://urdf_tutorial/meshes/collision/power_bottom.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+    
+
+	
+
+
+
+	
+
+   
+
+  
+
+   
+   
+
+   
+
+   
+
+
+
+
+ 
+
+ 
+
+    
+   
+</robot>

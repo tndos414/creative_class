@@ -1,0 +1,48 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name='echo_bot'>
+    <static>false</static>
+    <self_collide>1</self_collide>
+    
+    <link name="torso_link">
+      <self_collide>1</self_collide>
+      <pose>0 0 0 0 0 0</pose>
+      <inertial>
+        <inertia>
+          <ixx>0.006594</ixx>
+          <ixy>0.0</ixy>
+          <ixz>0.000999</ixz>
+          <iyy>0.007405</iyy>
+          <iyz>0.0</iyz>
+          <izz>0.010608</izz>
+        </inertia>
+        <mass>2.915</mass>
+        <pose>0.025 0 0.053 0 0 0</pose>
+      </inertial>
+
+      <collision name="torso_collision">
+        <geometry>
+          <mesh>
+            <uri>model://echo_bot/meshes/STL/torso.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>0.05</mu>
+              <mu2>0.05</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+
+      <visual name="torso_visual">
+        <geometry>
+          <mesh>
+            <uri>model://echo_bot/meshes/DAE/torso.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+     </model>
+</sdf>

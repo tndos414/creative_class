@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<robot name="mimic">
+    <material name="black">
+        <color rgba="0 0 0 1.0"/>
+    </material>
+
+    <link name="map">
+        <visual>
+            <origin rpy="0.0 0 0" xyz="0 0 0"/>
+        </visual>
+    </link>
+    
+    
+
+    <link name="sbj_arm">
+        <visual>
+            <geometry>
+                    <mesh filename="package://urdf_tutorial/meshes/visual/sbj_arm.dae"/>
+                    <material name= "black"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://urdf_tutorial/meshes/collision/sbj_arm.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="sbj_body1">
+        <visual>
+            <geometry>
+                    <mesh filename="package://urdf_tutorial/meshes/visual/sbj_body1.dae"/>
+                    <material name= "black"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://urdf_tutorial/meshes/collision/sbj_body1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="sbj_body2">
+        <visual>
+            <geometry>
+                    <mesh filename="package://urdf_tutorial/meshes/visual/sbj_body2.dae"/>
+                    <material name= "black"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://urdf_tutorial/meshes/collision/sbj_dody2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="map_to_body1" type="prismatic">
+        <parent link="map"/>
+        <child link="sbj_body1"/>
+        <axis xyz="0 1 0"/>
+<limit effort="1000.0" lower="-0.38" upper="0" velocity="0.5"/>
+	</joint>
+    <joint name="map_to_body2" type="prismatic">
+        <parent link="map"/>
+        <child link="sbj_body2"/>
+        <axis xyz="0 1 0"/>
+<limit effort="1000.0" lower="-0.38" upper="0" velocity="0.5"/>
+    </joint>
+    <joint name="body_to_arm" type="fixed">
+        <parent link="sbj_body1"/>
+        <child link="sbj_arm"/>
+    </joint>
+    <joint name="map_to_ladder" type="fixed">
+        <parent link="map"/>
+        <child link="ladder"/>
+    </joint>
+<link name="ladder">
+        <visual>
+            <origin rpy="0.0 0 0" xyz="0 0 0"/>
+            <geometry>
+                <mesh filename="package://urdf_tutorial/meshes/visual/ladder.dae" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </visual>
+    </link>
+    
+
+</robot>

@@ -1,0 +1,1186 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<library_geometries>    <geometry id="body2_fr-lib" name="body2_frMesh">
+      <mesh>
+        <source id="body2_fr-POSITION">
+          <float_array id="body2_fr-POSITION-array" count="306">
+0.025000 -0.062000 0.033000
+0.025000 -0.080000 0.033000
+0.020000 -0.062000 0.033000
+0.020000 -0.080000 0.033000
+0.020000 -0.062000 0.000000
+0.025000 -0.062000 0.000000
+0.020000 -0.087000 0.000000
+0.025000 -0.087000 0.000000
+0.020000 -0.087000 0.028000
+0.025000 -0.087000 0.028000
+0.020000 -0.085342 0.030683
+0.025000 -0.085342 0.030683
+0.020000 -0.081342 0.032683
+0.025000 -0.081342 0.032683
+0.025000 -0.080000 0.032000
+0.020000 -0.080000 0.032000
+0.020000 -0.086963 0.028473
+0.020000 -0.086851 0.028933
+0.020000 -0.086669 0.029371
+0.020000 -0.086419 0.029774
+0.020000 -0.086110 0.030133
+0.020000 -0.085748 0.030438
+0.025000 -0.086963 0.028473
+0.025000 -0.086851 0.028933
+0.025000 -0.086669 0.029371
+0.025000 -0.086419 0.029774
+0.025000 -0.086110 0.030133
+0.025000 -0.085748 0.030438
+0.025000 -0.079653 0.031970
+0.025000 -0.079316 0.031879
+0.025000 -0.079000 0.031732
+0.025000 -0.078714 0.031532
+0.025000 -0.078468 0.031286
+0.025000 -0.078268 0.031000
+0.025000 -0.078121 0.030684
+0.025000 -0.078030 0.030347
+0.025000 -0.078000 0.030000
+0.025000 -0.078030 0.029653
+0.025000 -0.078121 0.029316
+0.025000 -0.078268 0.029000
+0.025000 -0.078468 0.028714
+0.025000 -0.078714 0.028468
+0.025000 -0.079000 0.028268
+0.025000 -0.079316 0.028121
+0.025000 -0.079653 0.028030
+0.025000 -0.080000 0.028000
+0.025000 -0.080347 0.028030
+0.025000 -0.080684 0.028121
+0.025000 -0.081000 0.028268
+0.025000 -0.081286 0.028468
+0.025000 -0.081532 0.028714
+0.025000 -0.081732 0.029000
+0.025000 -0.081879 0.029316
+0.025000 -0.081970 0.029653
+0.025000 -0.082000 0.030000
+0.025000 -0.081970 0.030347
+0.025000 -0.081879 0.030684
+0.025000 -0.081732 0.031000
+0.025000 -0.081532 0.031286
+0.025000 -0.081286 0.031532
+0.025000 -0.081000 0.031732
+0.025000 -0.080684 0.031879
+0.025000 -0.080347 0.031970
+0.020000 -0.079653 0.031970
+0.020000 -0.079316 0.031879
+0.020000 -0.079000 0.031732
+0.020000 -0.078714 0.031532
+0.020000 -0.078468 0.031286
+0.020000 -0.078268 0.031000
+0.020000 -0.078121 0.030684
+0.020000 -0.078030 0.030347
+0.020000 -0.078000 0.030000
+0.020000 -0.078030 0.029653
+0.020000 -0.078121 0.029316
+0.020000 -0.078268 0.029000
+0.020000 -0.078468 0.028714
+0.020000 -0.078714 0.028468
+0.020000 -0.079000 0.028268
+0.020000 -0.079316 0.028121
+0.020000 -0.079653 0.028030
+0.020000 -0.080000 0.028000
+0.020000 -0.080347 0.028030
+0.020000 -0.080684 0.028121
+0.020000 -0.081000 0.028268
+0.020000 -0.081286 0.028468
+0.020000 -0.081532 0.028714
+0.020000 -0.081732 0.029000
+0.020000 -0.081879 0.029316
+0.020000 -0.081970 0.029653
+0.020000 -0.082000 0.030000
+0.020000 -0.081970 0.030347
+0.020000 -0.081879 0.030684
+0.020000 -0.081732 0.031000
+0.020000 -0.081532 0.031286
+0.020000 -0.081286 0.031532
+0.020000 -0.081000 0.031732
+0.020000 -0.080684 0.031879
+0.020000 -0.080347 0.031970
+0.020000 -0.080913 0.032858
+0.020000 -0.080462 0.032964
+0.025000 -0.080913 0.032858
+0.025000 -0.080462 0.032964
+</float_array>
+          <technique_common>
+            <accessor source="#body2_fr-POSITION-array" count="102" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="body2_fr-Normal0">
+          <float_array id="body2_fr-Normal0-array" count="660">
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -0.447214 0.894427
+0.000000 -0.582509 0.812824
+0.000000 -0.703262 0.710931
+0.000000 -0.806460 0.591289
+0.000000 -0.889525 0.456887
+0.000000 -0.950384 0.311079
+0.000000 -0.987518 0.157505
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -0.987518 0.157505
+0.000000 -0.950384 0.311079
+0.000000 -0.889525 0.456887
+0.000000 -0.806460 0.591289
+0.000000 -0.703262 0.710931
+0.000000 -0.582509 0.812824
+0.000000 -0.447214 0.894427
+0.000000 -0.447214 0.894427
+0.000000 -0.447214 0.894427
+0.000000 -0.447214 0.894427
+0.000000 -0.447214 0.894427
+0.000000 0.000000 -1.000000
+0.000000 -0.173648 -0.984808
+0.000000 -0.342020 -0.939693
+0.000000 -0.500000 -0.866025
+0.000000 -0.642788 -0.766044
+0.000000 -0.766044 -0.642788
+0.000000 -0.866025 -0.500000
+0.000000 -0.939693 -0.342020
+0.000000 -0.984808 -0.173648
+0.000000 -1.000000 0.000000
+0.000000 -0.984808 0.173648
+0.000000 -0.939693 0.342020
+0.000000 -0.866025 0.500000
+0.000000 -0.766044 0.642788
+0.000000 -0.642788 0.766044
+0.000000 -0.500000 0.866025
+0.000000 -0.342020 0.939693
+0.000000 -0.173648 0.984808
+0.000000 0.000000 1.000000
+0.000000 0.173648 0.984808
+0.000000 0.342020 0.939693
+0.000000 0.500000 0.866025
+0.000000 0.642788 0.766044
+0.000000 0.766044 0.642788
+0.000000 0.866025 0.500000
+0.000000 0.939693 0.342020
+0.000000 0.984808 0.173648
+0.000000 1.000000 0.000000
+0.000000 0.984808 -0.173648
+0.000000 0.939693 -0.342020
+0.000000 0.866025 -0.500000
+0.000000 0.766044 -0.642788
+0.000000 0.642788 -0.766044
+0.000000 0.500000 -0.866025
+0.000000 0.342020 -0.939693
+0.000000 0.173648 -0.984808
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.173648 -0.984808
+0.000000 0.342020 -0.939693
+0.000000 0.500000 -0.866025
+0.000000 0.642788 -0.766044
+0.000000 0.766044 -0.642788
+0.000000 0.866025 -0.500000
+0.000000 0.939693 -0.342020
+0.000000 0.984808 -0.173648
+0.000000 1.000000 0.000000
+0.000000 0.984808 0.173648
+0.000000 0.939693 0.342020
+0.000000 0.866025 0.500000
+0.000000 0.766044 0.642788
+0.000000 0.642788 0.766044
+0.000000 0.500000 0.866025
+0.000000 0.342020 0.939693
+0.000000 0.173648 0.984808
+0.000000 0.000000 1.000000
+0.000000 -0.173648 0.984808
+0.000000 -0.342020 0.939693
+0.000000 -0.500000 0.866025
+0.000000 -0.642788 0.766044
+0.000000 -0.766044 0.642788
+0.000000 -0.866025 0.500000
+0.000000 -0.939693 0.342020
+0.000000 -0.984808 0.173648
+0.000000 -1.000000 0.000000
+0.000000 -0.984808 -0.173648
+0.000000 -0.939693 -0.342020
+0.000000 -0.866025 -0.500000
+0.000000 -0.766044 -0.642788
+0.000000 -0.642788 -0.766044
+0.000000 -0.500000 -0.866025
+0.000000 -0.342020 -0.939693
+0.000000 -0.173648 -0.984808
+0.000000 0.000000 -1.000000
+0.000000 0.000000 1.000000
+0.000000 -0.153935 0.988081
+0.000000 -0.304200 0.952608
+0.000000 -0.447214 0.894427
+0.000000 -0.447214 0.894427
+0.000000 -0.304200 0.952608
+0.000000 -0.153935 0.988081
+0.000000 0.000000 1.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#body2_fr-Normal0-array" count="220" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="body2_fr-VERTEX">
+          <input semantic="POSITION" source="#body2_fr-POSITION"/>
+        </vertices>
+        <triangles count="204" material="Material_1">
+          <input semantic="VERTEX" offset="0" source="#body2_fr-VERTEX"/>
+          <input semantic="NORMAL" offset="1" source="#body2_fr-Normal0"/>
+          <p> 2 2 3 1 1 0 0 3 2 2 1 0 0 6 4 4 2 5 5 7 4 4 0 6 5 10 6 8 4 9 7 11 6 8 5 10 9 13 8 12 7 14 6 15 7 14 8 12 21 17 27 30 10 16 20 18 26 29 21 17 19 19 25 28 20 18 18 20 24 27 19 19 17 21 23 26 18 20 16 22 22 25 17 21 8 23 9 24 16 22 22 25 16 22 9 24 23 26 17 21 22 25 24 27 18 20 23 26 25 28 19 19 24 27 26 29 20 18 25 28 27 30 21 17 26 29 11 31 10 16 27 30 11 34 13 33 12 32 10 35 11 34 12 32 65 106 30 39 29 38 66 105 31 40 30 39 67 104 32 41 31 40 68 103 33 42 32 41 69 102 34 43 33 42 70 101 35 44 34 43 71 100 36 45 35 44 72 99 37 46 36 45 73 98 38 47 37 46 74 97 39 48 38 47 75 96 40 49 39 48 76 95 41 50 40 49 77 94 42 51 41 50 78 93 43 52 42 51 79 92 44 53 43 52 80 91 45 54 44 53 81 90 46 55 45 54 82 89 47 56 46 55 83 88 48 57 47 56 84 87 49 58 48 57 85 86 50 59 49 58 86 85 51 60 50 59 87 84 52 61 51 60 88 83 53 62 52 61 89 82 54 63 53 62 90 81 55 64 54 63 91 80 56 65 55 64 92 79 57 66 56 65 93 78 58 67 57 66 94 77 59 68 58 67 95 76 60 69 59 68 96 75 61 70 60 69 97 74 62 71 61 70 15 73 14 72 62 71 64 107 29 38 28 37 97 74 15 73 62 71 63 108 28 37 14 36 96 75 97 74 61 70 95 76 96 75 60 69 94 77 95 76 59 68 93 78 94 77 58 67 92 79 93 78 57 66 91 80 92 79 56 65 90 81 91 80 55 64 89 82 90 81 54 63 88 83 89 82 53 62 87 84 88 83 52 61 86 85 87 84 51 60 85 86 86 85 50 59 84 87 85 86 49 58 83 88 84 87 48 57 82 89 83 88 47 56 81 90 82 89 46 55 80 91 81 90 45 54 79 92 80 91 44 53 78 93 79 92 43 52 77 94 78 93 42 51 76 95 77 94 41 50 75 96 76 95 40 49 74 97 75 96 39 48 73 98 74 97 38 47 72 99 73 98 37 46 71 100 72 99 36 45 70 101 71 100 35 44 69 102 70 101 34 43 68 103 69 102 33 42 67 104 68 103 32 41 66 105 67 104 31 40 65 106 66 105 30 39 64 107 65 106 29 38 63 108 64 107 28 37 15 109 63 108 14 36 99 111 101 116 3 110 98 112 100 115 99 111 12 113 13 114 98 112 100 115 98 112 13 114 101 116 99 111 100 115 1 117 3 110 101 116 52 144 22 122 9 121 52 144 23 123 22 122 52 144 24 124 23 123 52 144 25 125 24 124 52 144 26 126 25 125 52 144 27 127 26 126 61 135 100 130 13 129 62 134 101 131 100 130 14 133 1 132 101 131 57 139 13 129 11 128 62 134 14 133 101 131 61 135 62 134 100 130 52 144 11 128 27 127 60 136 61 135 13 129 59 137 60 136 13 129 58 138 59 137 13 129 57 139 58 138 13 129 56 140 57 139 11 128 46 150 9 121 7 120 55 141 56 140 11 128 54 142 55 141 11 128 53 143 54 142 11 128 52 144 53 143 11 128 43 153 7 120 5 119 51 145 52 144 9 121 50 146 51 145 9 121 49 147 50 146 9 121 48 148 49 147 9 121 47 149 48 148 9 121 46 150 47 149 9 121 45 151 46 150 7 120 44 152 45 151 7 120 41 155 5 119 0 118 43 153 44 152 7 120 42 154 43 153 5 119 41 155 42 154 5 119 40 156 41 155 0 118 39 157 40 156 0 118 38 158 39 157 0 118 37 159 38 158 0 118 36 160 37 159 0 118 35 161 36 160 0 118 34 162 35 161 0 118 33 163 34 162 0 118 31 165 0 118 1 132 32 164 33 163 0 118 31 165 32 164 0 118 30 166 31 165 1 132 29 167 30 166 1 132 28 168 1 132 14 133 28 168 29 167 1 132 15 184 99 183 3 169 97 185 99 183 15 184 87 195 8 173 16 174 87 195 16 174 17 175 87 195 17 175 18 176 87 195 18 176 19 177 87 195 19 177 20 178 87 195 20 178 21 179 98 182 96 186 12 181 99 183 97 185 98 182 92 190 10 180 12 181 96 186 98 182 97 185 87 195 21 179 10 180 95 187 12 181 96 186 94 188 12 181 95 187 93 189 12 181 94 188 92 190 12 181 93 189 91 191 10 180 92 190 81 201 6 172 8 173 90 192 10 180 91 191 89 193 10 180 90 192 88 194 10 180 89 193 87 195 10 180 88 194 78 204 4 171 6 172 86 196 8 173 87 195 85 197 8 173 86 196 84 198 8 173 85 197 83 199 8 173 84 198 82 200 8 173 83 199 81 201 8 173 82 200 80 202 6 172 81 201 79 203 6 172 80 202 76 206 2 170 4 171 78 204 6 172 79 203 77 205 4 171 78 204 76 206 4 171 77 205 75 207 2 170 76 206 74 208 2 170 75 207 73 209 2 170 74 208 72 210 2 170 73 209 71 211 2 170 72 210 70 212 2 170 71 211 69 213 2 170 70 212 68 214 2 170 69 213 66 216 3 169 2 170 67 215 2 170 68 214 66 216 2 170 67 215 65 217 3 169 66 216 64 218 3 169 65 217 63 219 15 184 3 169 63 219 3 169 64 218</p>
+        </triangles>
+      </mesh>
+    </geometry>
+</library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="" name="">
+      <node name="" id="" sid="">
+        <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+        <node name="root" id="root" sid="root">
+          <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+          <node name="baseFBXASC032FBXASC0401FBXASC041" id="baseFBXASC032FBXASC0401FBXASC041" sid="baseFBXASC032FBXASC0401FBXASC041">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#baseFBXASC032FBXASC0401FBXASC041-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_1" target="#Material_1"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="base" id="base" sid="base">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#base-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_1" target="#Material_1"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+        </node>
+        <node name="gear" id="gear" sid="gear">
+          <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+          <node name="gear_front2" id="gear_front2" sid="gear_front2">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#gear_front2-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_2" target="#Material_2"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="gear_rear2" id="gear_rear2" sid="gear_rear2">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#gear_rear2-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_2" target="#Material_2"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="gear_front1" id="gear_front1" sid="gear_front1">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#gear_front1-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_2" target="#Material_2"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="gear_rear1" id="gear_rear1" sid="gear_rear1">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#gear_rear1-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_2" target="#Material_2"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+        </node>
+        <node name="fl" id="fl" sid="fl">
+          <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+          <node name="body2_fl" id="body2_fl" sid="body2_fl">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#body2_fl-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_1" target="#Material_1"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="body1_fl" id="body1_fl" sid="body1_fl">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#body1_fl-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_1" target="#Material_1"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="hanging_arm_fl" id="hanging_arm_fl" sid="hanging_arm_fl">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#hanging_arm_fl-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_3" target="#Material_3"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="connector_arm_fl" id="connector_arm_fl" sid="connector_arm_fl">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#connector_arm_fl-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_4" target="#Material_4"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="connector_top_fl" id="connector_top_fl" sid="connector_top_fl">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#connector_top_fl-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_4" target="#Material_4"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="fixed_top_fl" id="fixed_top_fl" sid="fixed_top_fl">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#fixed_top_fl-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_4" target="#Material_4"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="power_top_fl" id="power_top_fl" sid="power_top_fl">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#power_top_fl-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_4" target="#Material_4"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="fixed_bottom_fl" id="fixed_bottom_fl" sid="fixed_bottom_fl">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#fixed_bottom_fl-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_4" target="#Material_4"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="connector_bottom_fl" id="connector_bottom_fl" sid="connector_bottom_fl">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#connector_bottom_fl-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_4" target="#Material_4"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="power_bottom_fl" id="power_bottom_fl" sid="power_bottom_fl">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#power_bottom_fl-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_4" target="#Material_4"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+        </node>
+        <node name="fr" id="fr" sid="fr">
+          <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+          <node name="body2_fr" id="body2_fr" sid="body2_fr">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#body2_fr-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_1" target="#Material_1"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="body1_fr" id="body1_fr" sid="body1_fr">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#body1_fr-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_1" target="#Material_1"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="hanging_arm_fr" id="hanging_arm_fr" sid="hanging_arm_fr">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#hanging_arm_fr-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_3" target="#Material_3"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="connector_arm_fr" id="connector_arm_fr" sid="connector_arm_fr">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#connector_arm_fr-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_4" target="#Material_4"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="connector_top_fr" id="connector_top_fr" sid="connector_top_fr">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#connector_top_fr-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_4" target="#Material_4"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="fixed_top_fr" id="fixed_top_fr" sid="fixed_top_fr">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#fixed_top_fr-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_4" target="#Material_4"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="power_top_fr" id="power_top_fr" sid="power_top_fr">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#power_top_fr-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_4" target="#Material_4"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="fixed_bottom_fr" id="fixed_bottom_fr" sid="fixed_bottom_fr">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#fixed_bottom_fr-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_4" target="#Material_4"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="connector_bottom_fr" id="connector_bottom_fr" sid="connector_bottom_fr">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#connector_bottom_fr-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_4" target="#Material_4"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="power_bottom_fr" id="power_bottom_fr" sid="power_bottom_fr">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#power_bottom_fr-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_4" target="#Material_4"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+        </node>
+        <node name="rl" id="rl" sid="rl">
+          <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+          <node name="body2_rl" id="body2_rl" sid="body2_rl">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#body2_rl-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_1" target="#Material_1"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="body1_rl" id="body1_rl" sid="body1_rl">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#body1_rl-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_1" target="#Material_1"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="hanging_arm_rl" id="hanging_arm_rl" sid="hanging_arm_rl">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#hanging_arm_rl-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_3" target="#Material_3"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="connector_arm_rl" id="connector_arm_rl" sid="connector_arm_rl">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#connector_arm_rl-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_4" target="#Material_4"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="connector_top_rl" id="connector_top_rl" sid="connector_top_rl">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#connector_top_rl-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_4" target="#Material_4"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="fixed_top_rl" id="fixed_top_rl" sid="fixed_top_rl">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#fixed_top_rl-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_4" target="#Material_4"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="power_top_rl" id="power_top_rl" sid="power_top_rl">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#power_top_rl-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_4" target="#Material_4"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="fixed_bottom_rl" id="fixed_bottom_rl" sid="fixed_bottom_rl">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#fixed_bottom_rl-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_4" target="#Material_4"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="connector_bottom_rl" id="connector_bottom_rl" sid="connector_bottom_rl">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#connector_bottom_rl-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_4" target="#Material_4"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="power_bottom_rl" id="power_bottom_rl" sid="power_bottom_rl">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#power_bottom_rl-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_4" target="#Material_4"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+        </node>
+        <node name="rr" id="rr" sid="rr">
+          <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+          <node name="body2_rr" id="body2_rr" sid="body2_rr">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#body2_rr-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_1" target="#Material_1"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="body1_rr" id="body1_rr" sid="body1_rr">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#body1_rr-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_1" target="#Material_1"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="hanging_arm_rr" id="hanging_arm_rr" sid="hanging_arm_rr">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#hanging_arm_rr-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_3" target="#Material_3"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="connector_arm_rr" id="connector_arm_rr" sid="connector_arm_rr">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#connector_arm_rr-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_4" target="#Material_4"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="connector_top_rr" id="connector_top_rr" sid="connector_top_rr">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#connector_top_rr-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_4" target="#Material_4"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="fixed_top_rr" id="fixed_top_rr" sid="fixed_top_rr">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#fixed_top_rr-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_4" target="#Material_4"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="power_top_rr" id="power_top_rr" sid="power_top_rr">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#power_top_rr-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_4" target="#Material_4"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="fixed_bottom_rr" id="fixed_bottom_rr" sid="fixed_bottom_rr">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#fixed_bottom_rr-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_4" target="#Material_4"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="connector_bottom_rr" id="connector_bottom_rr" sid="connector_bottom_rr">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#connector_bottom_rr-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_4" target="#Material_4"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="power_bottom_rr" id="power_bottom_rr" sid="power_bottom_rr">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#power_bottom_rr-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_4" target="#Material_4"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+        </node>
+        <node name="shaft" id="shaft" sid="shaft">
+          <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+          <node name="shaft_front1" id="shaft_front1" sid="shaft_front1">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#shaft_front1-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_5" target="#Material_5"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="shaft_rear1" id="shaft_rear1" sid="shaft_rear1">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#shaft_rear1-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_5" target="#Material_5"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="shaft_front2" id="shaft_front2" sid="shaft_front2">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#shaft_front2-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_5" target="#Material_5"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node name="shaft_rear2" id="shaft_rear2" sid="shaft_rear2">
+            <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+            <instance_geometry url="#shaft_rear2-lib">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="Material_5" target="#Material_5"/>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+        </node>
+      </node>
+      <extra>
+        <technique profile="MAX3D">
+          <frame_rate>30.000000</frame_rate>
+        </technique>
+        <technique profile="FCOLLADA">
+          <start_time>0.000000</start_time>
+          <end_time>1.000000</end_time>
+        </technique>
+      </extra>
+    </visual_scene>

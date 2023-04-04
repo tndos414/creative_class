@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name='ladder'>
+    <link name="body">
+        <visual name="visual">
+            <geometry>
+                <mesh>
+                    <uri>model://ladders/meshes/collision/body.dae</uri>
+                    <scale>1 1 1</scale>
+                </mesh>
+            </geometry>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                    <uri>model://ladders/meshes/collision/body.dae</uri>
+                    <scale>1 1 1</scale>
+                </mesh>            
+            </geometry>
+        </collision>
+    </link>
+
+     <link name="bar">
+        <visual name="visual">
+            <geometry>
+                <mesh>
+                    <uri>model://ladders/meshes/collision/bong.dae</uri>
+                    <scale>1 1 1</scale>
+                </mesh>                 
+            </geometry>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                    <uri>model://ladders/meshes/collision/bong.dae</uri>
+                    <scale>1 1 1</scale>
+                </mesh>                 
+            </geometry>
+        </collision>
+    </link>
+
+  </model>
+</sdf>
