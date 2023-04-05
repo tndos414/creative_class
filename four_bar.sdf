@@ -138,7 +138,3 @@
   </model>
 </sdf>
 
-# 결과 리스트를 이용하여 텍스트 파일을 작성합니다.
-output_file_path = "output.txt"
-with open(output_file_path, "w") as f:
-    f.writelines(result)
