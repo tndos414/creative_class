@@ -6,15 +6,16 @@
     <link name="body">
         <self_collide>1</self_collide>
         <inertial>
-          <inertia>
-	        <ixx>0.006594</ixx>
-            <ixy>0.0</ixy>
-            <ixz>0.000999</ixz>
-            <iyy>0.007405</iyy>
-            <iyz>0.0</iyz>
-            <izz>0.010608</izz>
-         </inertia>
-            <mass>2.915</mass>
+            <pose>2.50e-03 2.25e-02 3.14e-02</pose>
+          <inertia> 
+                <ixx>2.16-06</ixx>
+                <ixy>0</ixy>
+                <ixz>0</ixz>
+                <iyy>7.03e-07</iyy>
+                <iyz>-3.66e-07</iyz>
+                <izz>1.49e-06</izz>
+            </inertia>
+            <mass>8.10e-03</mass>
         </inertial>
         <visual name="visual">
             <geometry>
@@ -66,7 +67,6 @@
         <child>body</child>
         <axis>
             <xyz>1 0 0</xyz>
-
         </axis>
     </joint>
 
@@ -78,22 +78,22 @@
         <child>fixed_bottom</child>
         <axis>
             <xyz>1 0 0</xyz>
-
         </axis>
     </joint>
 
     <link name="power_top">
         <self_collide>1</self_collide>
         <inertial>
+            <pose>1.75e-02 2.50e-02 4.75e-02</pose>
             <inertia> 
-                <ixx>0.006594</ixx>
-                <ixy>0.0</ixy>
-                <ixz>0.000999</ixz>
-                <iyy>0.007405</iyy>
-                <iyz>0.0</iyz>
-                <izz>0.010608</izz>
+                <ixx>7.55e-09</ixx>
+                <ixy>-0</ixy>
+                <ixz>-0</ixz>
+                <iyy>2.65e-09</iyy>
+                <iyz>-2.38e-09</iyz>
+                <izz>6.23e-09</izz>
             </inertia>
-            <mass>2.915</mass>
+            <mass>3.19e-04</mass>
         </inertial>
         <visual name="visual">
             <geometry>
@@ -127,22 +127,22 @@
         <child>connector_top</child>
         <axis>
             <xyz>1 0 0</xyz>
- 
         </axis>
     </joint>
 
     <link name="connector_top">
         <self_collide>1</self_collide>
         <inertial>
+            <pose>1.25e-02 4e-02 6e-02</pose>
             <inertia> 
-                <ixx>0.006594</ixx>
-                <ixy>0.0</ixy>
-                <ixz>0.000999</ixz>
-                <iyy>0.007405</iyy>
-                <iyz>0.0</iyz>
-                <izz>0.010608</izz>
+                <ixx>6.22e-08</ixx>
+                <ixy>-0</ixy>
+                <ixz>-0</ixz>
+                <iyy>3.26e-08</iyy>
+                <iyz>-2.98e-08</iyz>
+                <izz>3.26e-08</izz>
             </inertia>
-            <mass>2.915</mass>
+            <mass>7.22e-04</mass>
         </inertial>
         <visual name="visual">
             <geometry>
@@ -176,22 +176,22 @@
         <child>connector_arm</child>
         <axis>
             <xyz>1 0 0</xyz>
- 
         </axis>
     </joint>
 
     <link name="connector_arm">
         <self_collide>1</self_collide>
         <inertial>
+            <pose>1.25e-02 6.75e-02 6.25e-02</pose>
             <inertia> 
-                <ixx>0.006594</ixx>
-                <ixy>0.0</ixy>
-                <ixz>0.000999</ixz>
-                <iyy>0.007405</iyy>
-                <iyz>0.0</iyz>
-                <izz>0.010608</izz>
+                <ixx>1.37e-07</ixx>
+                <ixy>0</ixy>
+                <ixz>0</ixz>
+                <iyy>2.44e-08</iyy>
+                <iyz>4.85e-08</iyz>
+                <izz>1.17e-07</izz>
             </inertia>
-            <mass>2.915</mass>
+            <mass>9.54e-04</mass>
         </inertial>
         <visual name="visual">
             <geometry>
@@ -231,15 +231,16 @@
     <link name="fixed_top">
         <self_collide>1</self_collide>
         <inertial>
+            <pose>7.50e-02 5.00e-02 5.75e-02</pose>
             <inertia> 
-                <ixx>0.006594</ixx>
-                <ixy>0.0</ixy>
-                <ixz>0.000999</ixz>
-                <iyy>0.007405</iyy>
-                <iyz>0.0</iyz>
-                <izz>0.010608</izz>
+                <ixx>4.53e-08</ixx>
+                <ixy>0</ixy>
+                <ixz>0</ixz>
+                <iyy>4.54-08</iyy>
+                <iyz>0</iyz>
+                <izz>2.57e-09</izz>
             </inertia>
-            <mass>2.915</mass>
+            <mass>6.45e-04</mass>
         </inertial>
         <visual name="visual">
             <geometry>
@@ -273,22 +274,22 @@
         <child>hanging_arm</child>
         <axis>
             <xyz>1 0 0</xyz>
-
         </axis>
     </joint>
 
     <link name="hanging_arm">
         <self_collide>1</self_collide>
         <inertial>
+            <pose>5.00e-03 8.13e-02 6.43e-02</pose>
             <inertia> 
-                <ixx>0.006594</ixx>
-                <ixy>0.0</ixy>
-                <ixz>0.000999</ixz>
-                <iyy>0.007405</iyy>
-                <iyz>0.0</iyz>
-                <izz>0.010608</izz>
+                <ixx>2.57e-06</ixx>
+                <ixy>0</ixy>
+                <ixz>0</ixz>
+                <iyy>2.35e-06</iyy>
+                <iyz>-7.20e-07</iyz>
+                <izz>3.10e-07</izz>
             </inertia>
-            <mass>2.915</mass>
+            <mass>5.58e-03</mass>
         </inertial>
         <visual name="visual">
             <geometry>
@@ -328,22 +329,22 @@
         <child>hanging_arm</child>
         <axis>
             <xyz>1 0 0</xyz>
-
         </axis>
     </joint>
 
     <link name="fixed_bottom">
         <self_collide>1</self_collide>
         <inertial>
+            <pose>-2.50e-03 4.50e-02 3.18e-02</pose>
             <inertia> 
-                <ixx>0.006594</ixx>
-                <ixy>0.0</ixy>
-                <ixz>0.000999</ixz>
-                <iyy>0.007405</iyy>
-                <iyz>0.0</iyz>
-                <izz>0.010608</izz>
+                <ixx>1.99e-07</ixx>
+                <ixy>0</ixy>
+                <ixz>0</ixz>
+                <iyy>6.70e-08</iyy>
+                <iyz>-4.80e-08</iyz>
+                <izz>1.40e-07</izz>
             </inertia>
-            <mass>2.915</mass>
+            <mass>1.98e-03</mass>
         </inertial>
         <visual name="visual">
             <geometry>
@@ -383,15 +384,16 @@
     <link name="connector_bottom">
         <self_collide>1</self_collide>
         <inertial>
+            <pose>-7.50e-03 1.75e-02 3.50e-02</pose>
             <inertia> 
-                <ixx>0.006594</ixx>
-                <ixy>0.0</ixy>
-                <ixz>0.000999</ixz>
-                <iyy>0.007405</iyy>
-                <iyz>0.0</iyz>
-                <izz>0.010608</izz>
+                <ixx>1.62e-07</ixx>
+                <ixy>0</ixy>
+                <ixz>0</ixz>
+                <iyy>4.26e-08</iyy>
+                <iyz>-6.84e-08</iyz>
+                <izz>1.23e-07</izz>
             </inertia>
-            <mass>2.915</mass>
+            <mass>9.68e-04</mass>
         </inertial>
         <visual name="visual">
             <geometry>
@@ -431,15 +433,16 @@
     <link name="power_bottom">
         <self_collide>1</self_collide>
         <inertial>
+            <pose>-2.50e-02 0 3.00e-02</pose>
             <inertia> 
-                <ixx>0.006594</ixx>
-                <ixy>0.0</ixy>
-                <ixz>0.000999</ixz>
-                <iyy>0.007405</iyy>
-                <iyz>0.0</iyz>
-                <izz>0.010608</izz>
+                <ixx>6.17e-09</ixx>
+                <ixy>0</ixy>
+                <ixz>0</ixz>
+                <iyy>6.02e-09</iyy>
+                <iyz>0</iyz>
+                <izz>1.36e-09</izz>
             </inertia>
-            <mass>2.915</mass>
+            <mass>2.91e-04</mass>
         </inertial>
         <visual name="visual">
             <geometry>
