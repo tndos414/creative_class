@@ -3,7 +3,81 @@
   <model name='fast_ver2'>
 	<self_collide>1</self_collide>
 
-    <link name="body">
+    <link name="base">
+        <inertial>
+            <pose>2.50e-02 -3.25e-02 7.50e-03</pose>
+            <mass>1.24e-01</mass>
+            <inertia> 
+                <ixx>2.09e-04</ixx>
+                <ixy>-0</ixy>
+                <ixz>-0</ixz>
+                <iyy>2.83e-05</iyy>
+                <iyz>0</iyz>
+                <izz>2.32e-04</izz>
+            </inertia>            
+        </inertial>
+        <visual name="visual">
+            <geometry>
+                <mesh>
+                    <uri>model://fast_ver2/meshes/collision/base.dae</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                    <uri>model://echo_bot/meshes/STL/base.stl</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="base_to_body1" type="fixed">
+        <pose>0 0 0.015</pose>
+        <parent>base</parent>
+        <child>body1</child>
+    </joint>
+
+    <joint name="base_to_body2" type="fixed">
+        <pose>0.020 0 0.015</pose>
+        <parent>base</parent>
+        <child>body2</child>
+    </joint>
+
+    <link name="body2">
+        <inertial>
+            <pose>2.25e-02 2.57e-02 3.10e-02</pose>
+            <mass>4.73e-02</mass>
+            <inertia> 
+                <ixx>6.57e-07</ixx>
+                <ixy>-0</ixy>
+                <ixz>-0</ixz>
+                <iyy>4.22e-07</iyy>
+                <iyz>-1.58e-08</iyz>
+                <izz>2.53e-07</izz>
+            </inertia>
+        </inertial>
+        <visual name="visual">
+            <geometry>
+                <mesh>
+                    <uri>model://fast_ver2/meshes/collision/body2.dae</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>           
+            </geometry>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                    <uri>model://echo_bot/meshes/STL/body2.stl</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="body1">
         <self_collide>1</self_collide>
         <inertial>
             <pose>2.50e-03 2.25e-02 3.14e-02</pose>
@@ -20,8 +94,8 @@
         <visual name="visual">
             <geometry>
                  <mesh>
-                    <uri>model://fast_ver2/meshes/collision/body.dae</uri>
-                    <scale>1 1 1</scale>
+                    <uri>model://fast_ver2/meshes/collision/body1.dae</uri>
+                    <scale>0.001 0.001 0.001</scale>
                 </mesh>
             </geometry>
             <material>
@@ -34,7 +108,7 @@
         <collision name='collision'>
             <geometry>
                  <mesh>
-                    <uri>model://echo_bot/meshes/STL/body.stl</uri>
+                    <uri>model://echo_bot/meshes/STL/body1.stl</uri>
                     <scale>0.001 0.001 0.001</scale>
                 </mesh>
             </geometry>
@@ -54,7 +128,7 @@
 
     <joint name="body_to_power_top" type="revolute">
         <pose>0 0.02 0.03 0 0 0</pose>
-        <parent>body</parent>
+        <parent>body2</parent>
         <child>power_top</child>
         <axis>
             <xyz>1 0 0</xyz>
@@ -62,9 +136,9 @@
     </joint>
 
     <joint name="body_to_fixed_top" type="revolute">
-        <pose>0 0.05 0.03 0 0 0</pose>
+        <pose>0 0.05 0.045 0 0 0</pose>
         <parent>fixed_top</parent>
-        <child>body</child>
+        <child>body2</child>
         <axis>
             <xyz>1 0 0</xyz>
         </axis>
@@ -74,7 +148,7 @@
 
     <joint name="body_to_fixed_bottom" type="revolute">
         <pose>0 0.035 0.01 0 0 0</pose>
-        <parent>body</parent>
+        <parent>body1</parent>
         <child>fixed_bottom</child>
         <axis>
             <xyz>1 0 0</xyz>
@@ -99,7 +173,7 @@
             <geometry>
                 <mesh>
                     <uri>model://fast_ver2/meshes/collision/power_top.dae</uri>
-                    <scale>1 1 1</scale>
+                    <scale>0.001 0.001 0.001</scale>
                 </mesh>
             </geometry>
         </visual>
@@ -122,7 +196,7 @@
     </link>
 
     <joint name="power_top_to_connector_top" type="revolute">
-        <pose>0 0.03 0.035 0 0 0</pose>
+        <pose>0 0.03 0.050 0 0 0</pose>
         <parent>power_top</parent>
         <child>connector_top</child>
         <axis>
@@ -148,7 +222,7 @@
             <geometry>
                 <mesh>
                     <uri>model://fast_ver2/meshes/collision/connector_top.dae</uri>
-                    <scale>1 1 1</scale>
+                    <scale>0.001 0.001 0.001</scale>
                 </mesh>
             </geometry>
         </visual>
@@ -171,7 +245,7 @@
     </link>
 
     <joint name="connector_top_to_arm" type="revolute">
-        <pose>0 0.05 0.055 0 0 0</pose>
+        <pose>0 0.05 0.070 0 0 0</pose>
         <parent>connector_top</parent>
         <child>connector_arm</child>
         <axis>
@@ -197,7 +271,7 @@
             <geometry>
                 <mesh>
                     <uri>model://fast_ver2/meshes/collision/connector_arm.dae</uri>
-                    <scale>1 1 1</scale>
+                    <scale>0.001 0.001 0.001</scale>
                 </mesh>
             </geometry>
         </visual>
@@ -220,7 +294,7 @@
     </link>
    
    <joint name="connector_top_to_fixed_top" type="revolute">
-        <pose>0 0.05 0.055 0 0 0</pose>
+        <pose>0 0.05 0.070 0 0 0</pose>
         <parent>connector_top</parent>
         <child>fixed_top</child>
         <axis>
@@ -246,7 +320,7 @@
             <geometry>
                 <mesh>
                     <uri>model://fast_ver2/meshes/collision/fixed_top.dae</uri>
-                    <scale>1 1 1</scale>
+                    <scale>0.001 0.001 0.001</scale>
                 </mesh>
             </geometry>
         </visual>
@@ -269,7 +343,7 @@
     </link>
 
     <joint name="connector_arm_to_hanging_arm" type="revolute">
-        <pose>0 0.085 0.04 0 0 0</pose>
+        <pose>0 0.085 0.055 0 0 0</pose>
         <parent>connector_arm</parent>
         <child>hanging_arm</child>
         <axis>
@@ -295,7 +369,7 @@
             <geometry>
                 <mesh>
                     <uri>model://fast_ver2/meshes/collision/hanging_arm.dae</uri>
-                    <scale>1 1 1</scale>
+                    <scale>0.001 0.001 0.001</scale>
                 </mesh>
             </geometry>
             <material>
@@ -324,7 +398,7 @@
     </link>
 
      <joint name="hanging_arm_to_fixed_bottom" type="revolute">
-        <pose>0 0.065 0.01 0 0 0</pose>
+        <pose>0 0.065 0.025 0 0 0</pose>
         <parent>fixed_bottom</parent>
         <child>hanging_arm</child>
         <axis>
@@ -350,7 +424,7 @@
             <geometry>
                 <mesh>
                     <uri>model://fast_ver2/meshes/collision/fixed_bottom.dae</uri>
-                    <scale>1 1 1</scale>
+                    <scale>0.001 0.001 0.001</scale>
                 </mesh>
             </geometry>
         </visual>
@@ -373,7 +447,7 @@
     </link>
 
      <joint name="fixed_bottom_to_connector_bottom" type="revolute">
-        <pose>0 0.035 0.03 0 0 0</pose>
+        <pose>0 0.035 0.045 0 0 0</pose>
         <parent>connector_bottom</parent>
         <child>fixed_bottom</child>
         <axis>
@@ -399,7 +473,7 @@
             <geometry>
                 <mesh>
                     <uri>model://fast_ver2/meshes/collision/connector_bottom.dae</uri>
-                    <scale>1 1 1</scale>
+                    <scale>0.001 0.001 0.001</scale>
                 </mesh>
             </geometry>
         </visual>
@@ -422,7 +496,7 @@
     </link>
 
      <joint name="connector_bottom_to_power_bottom" type="revolute">
-        <pose>0 0 0.01 0 0 0</pose>
+        <pose>0 0 0.025 0 0 0</pose>
         <parent>power_bottom</parent>
         <child>connector_bottom</child>
         <axis>
@@ -433,7 +507,7 @@
     <link name="power_bottom">
         <self_collide>1</self_collide>
         <inertial>
-            <pose>-2.50e-02 0 3.00e-02</pose>
+            <pose>-2.50e-03 0 3.00e-02</pose>
             <inertia> 
                 <ixx>6.17e-09</ixx>
                 <ixy>0</ixy>
@@ -448,7 +522,7 @@
             <geometry>
                 <mesh>
                     <uri>model://fast_ver2/meshes/collision/power_bottom.dae</uri>
-                    <scale>1 1 1</scale>
+                    <scale>0.001 0.001 0.001</scale>
                 </mesh>
             </geometry>
         </visual>
@@ -471,8 +545,8 @@
     </link>
 
     <joint name="body_to_power_bottom" type="revolute">
-        <pose>0 0 0.02 0 0 0</pose>
-        <parent>body</parent>
+        <pose>0 0 0.035 0 0 0</pose>
+        <parent>body1</parent>
         <child>power_bottom</child>
         <axis>
             <xyz>1 0 0</xyz>

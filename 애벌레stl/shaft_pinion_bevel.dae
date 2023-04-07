@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 3.4.1 commit date:2022-12-19, commit time:17:00, hash:55485cb379f7</authoring_tool>
+    </contributor>
+    <created>2023-04-07T13:57:16</created>
+    <modified>2023-04-07T13:57:16</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images/>
+  <library_geometries>
+    <geometry id="shaft_pinion_bevel_003-mesh" name="shaft_pinion_bevel.003">
+      <mesh>
+        <source id="shaft_pinion_bevel_003-mesh-positions">
+          <float_array id="shaft_pinion_bevel_003-mesh-positions-array" count="75">61.51559 19.6951 22 58.11269 20.3383 22 58.03479 21.37144 22 58.03479 21.37144 54.5 61.9652 20.62856 22 58.48448 22.30487 22 58.48439 22.30488 54.5 58.6951 19.48441 22 58.1127 20.33827 54.5 60.6617 19.11269 22 59.62856 19.03479 22 58.69512 19.48439 54.5 59.62856 19.03479 54.5 60.66173 19.1127 54.5 61.51561 19.69513 54.5 61.99411 21.15235 22 61.9652 20.62856 54.5 61.8854 21.66685 22 61.8873 21.66173 54.5 59.33786 22.88721 22 61.30037 22.51955 22 61.30487 22.51561 54.5 60.36956 22.96549 22 60.37144 22.96521 54.5 59.33827 22.8873 54.5</float_array>
+          <technique_common>
+            <accessor source="#shaft_pinion_bevel_003-mesh-positions-array" count="25" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="shaft_pinion_bevel_003-mesh-normals">
+          <float_array id="shaft_pinion_bevel_003-mesh-normals-array" count="93">0 0 -1 -0.99717 -0.07518017 0 -0.9009053 0.4340157 -2.66221e-6 -0.900944 0.4339357 0 -0.8261337 -0.5634743 0 -0.9971691 -0.07519268 2.97375e-7 -0.4339478 -0.900938 -3.39858e-7 -0.8261211 -0.5634927 0 0.07518804 -0.9971694 0 -0.4339385 -0.9009425 0 0.5634723 -0.826135 0 0.07519555 -0.9971689 2.26573e-7 0.9009364 -0.4339511 -2.26571e-7 0.563488 -0.8261243 2.27119e-7 0.9984799 -0.05511766 0 0.9009436 -0.4339363 0 0.9783999 0.2067211 -2.44969e-5 0.9971663 0.07519972 0.002098739 0.8245849 0.5657383 -4.55723e-5 0.8261239 0.5634885 4.05186e-5 0.432058 0.9018459 -1.70584e-5 0.4339428 0.9009405 4.89967e-5 -0.07565253 0.9971343 -1.58819e-6 -0.07519316 0.997169 1.2798e-5 -0.563663 0.8260049 4.88523e-6 -0.563488 0.8261243 -1.81695e-6 0 0 1 -1.65111e-6 0 1 -5.21572e-6 0 1 2.20148e-6 0 1 7.10056e-6 0 1</float_array>
+          <technique_common>
+            <accessor source="#shaft_pinion_bevel_003-mesh-normals-array" count="31" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="shaft_pinion_bevel_003-mesh-vertices">
+          <input semantic="POSITION" source="#shaft_pinion_bevel_003-mesh-positions"/>
+        </vertices>
+        <triangles count="46">
+          <input semantic="VERTEX" source="#shaft_pinion_bevel_003-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#shaft_pinion_bevel_003-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 3 1 2 1 1 1 4 0 0 0 2 0 5 0 4 0 2 0 6 2 5 2 2 2 3 3 6 3 2 3 0 0 7 0 1 0 8 4 1 4 7 4 8 5 3 5 1 5 9 0 10 0 7 0 11 6 7 6 10 6 0 0 9 0 7 0 11 7 8 7 7 7 12 8 10 8 9 8 12 9 11 9 10 9 13 10 9 10 0 10 13 11 12 11 9 11 14 12 0 12 4 12 14 13 13 13 0 13 5 0 15 0 4 0 16 14 4 14 15 14 14 15 4 15 16 15 5 0 17 0 15 0 18 16 15 16 17 16 18 17 16 17 15 17 19 0 20 0 17 0 21 18 17 18 20 18 5 0 19 0 17 0 21 19 18 19 17 19 19 0 22 0 20 0 23 20 20 20 22 20 23 21 21 21 20 21 24 22 22 22 19 22 24 23 23 23 22 23 24 24 19 24 5 24 6 25 24 25 5 25 3 26 16 26 18 26 8 26 16 26 3 26 14 27 16 27 8 27 24 28 18 28 21 28 6 26 18 26 24 26 3 29 18 29 6 29 24 30 21 30 23 30 13 28 8 28 11 28 14 26 8 26 13 26 13 26 11 26 12 26</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="shaft_pinion_bevel" name="shaft_pinion_bevel" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#shaft_pinion_bevel_003-mesh" name="shaft_pinion_bevel"/>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
