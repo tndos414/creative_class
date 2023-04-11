@@ -1,0 +1,677 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+    <model name='slow_ver'>
+        <self_collide>1</self_collide>
+        <link name="slow_body1">
+        <inertial>
+            <pose>6.04e-02 7.23e-03 5.60e-02</pose>
+            <mass>4.06e-02</mass>
+            <inertia> 
+                <ixx>5.71e-05</ixx>
+                <ixy>-2.94e-07</ixy>
+                <ixz>-3.05e-07</ixz>
+                <iyy>5.79e-05</iyy>
+                <iyz>7.50e-08</iyz>
+                <izz>2.27e-07</izz>
+            </inertia>            
+        </inertial>
+        <visual name="visual">
+            <geometry>
+                <mesh>
+                    <uri>model://fast_ver2/meshes/collision/slow_body1.dae</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                    <uri>model://echo_bot/meshes/STL/slow_body1.stl</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="body1_arm1" type="revolute">
+        <pose>0 0.05 0.045 0 0 0</pose>
+        <parent>slow_body1</parent>
+        <child>arm1</child>
+        <axis>
+            <xyz>1 0 0</xyz>
+        </axis>
+    </joint>
+    <joint name="body1_arm2" type="revolute">
+        <pose>0 0.05 0.045 0 0 0</pose>
+        <parent>slow_body1</parent>
+        <child>arm2</child>
+        <axis>
+            <xyz>1 0 0</xyz>
+        </axis>
+    </joint>
+
+    <joint name="body2_arm3" type="revolute">
+        <pose>0 0.05 0.045 0 0 0</pose>
+        <parent>slow_body2</parent>
+        <child>arm3</child>
+        <axis>
+            <xyz>1 0 0</xyz>
+        </axis>
+    </joint>
+    <joint name="body2_arm4" type="revolute">
+        <pose>0 0.05 0.045 0 0 0</pose>
+        <parent>slow_body2</parent>
+        <child>arm3</child>
+        <axis>
+            <xyz>1 0 0</xyz>
+        </axis>
+    </joint>
+
+    <joint name="rack1_body1" type="fixed">
+        <pose>0 0.05 0.045 0 0 0</pose>
+        <parent>slow_body1</parent>
+        <child>rack1</child>
+        <axis>
+            <xyz>1 0 0</xyz>
+        </axis>
+    </joint>
+
+    <joint name="rack2_body2" type="fixed">
+        <pose>0 0.05 0.045 0 0 0</pose>
+        <parent>slow_body2</parent>
+        <child>rack2</child>
+        <axis>
+            <xyz>1 0 0</xyz>
+        </axis>
+    </joint>
+
+    <joint name="rack1_body1" type="prismatic">
+        <pose>0 0.05 0.045 0 0 0</pose>
+        <parent>slow_body1</parent>
+        <child>rack1</child>
+        <axis>
+            <limit>
+                <lower>0.0</lower>
+                <upper>0.52359879</upper>
+                <effort>5</effort>
+                <velocity>3.14159274</velocity>
+            </limit>
+            <xyz>1 0 0</xyz>
+        </axis>
+    </joint>
+
+    <link name="slow_body2">
+        <inertial>
+            <pose>5.87e-02 3.49e-02 5.60e-03</pose>
+            <mass>4.85e-02</mass>
+            <inertia> 
+                <ixx>3.30e-06</ixx>
+                <ixy>-0</ixy>
+                <ixz>-0</ixz>
+                <iyy>6.72e-05</iyy>
+                <iyz>5.66e-07</iyz>
+                <izz>6.74e-05</izz>
+            </inertia>            
+        </inertial>
+        <visual name="visual">
+            <geometry>
+                <mesh>
+                    <uri>model://fast_ver2/meshes/collision/slow_body2.dae</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                    <uri>model://echo_bot/meshes/STL/slow_body2.stl</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="housing">
+        <inertial>
+            <pose>5.75e-02 2.10e-02 3.75-02</pose>
+            <mass>7.45e-02</mass>
+            <inertia> 
+                <ixx>3.09e-05</ixx>
+                <ixy>1.34e-05</ixy>
+                <ixz>3.04e-09</ixz>
+                <iyy>1.40e-04</iyy>
+                <iyz>0</iyz>
+                <izz>1.39e-04</izz>
+            </inertia>            
+        </inertial>
+        <visual name="visual">
+            <geometry>
+                <mesh>
+                    <uri>model://fast_ver2/meshes/collision/housing.dae</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                    <uri>model://echo_bot/meshes/STL/housing.stl</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="horn1_arm1" type="revolute">
+        <pose>0.1170032 0 0.0605 0 0 0</pose>
+        <parent>arm1</parent>
+        <child>horn1</child>
+        <axis>
+            <xyz>1 0 0</xyz>
+        </axis>
+    </joint>
+
+    <joint name="horn2_arm2" type="revolute">
+        <pose>0.0027417 0 0.0605 0 0 0</pose>
+        <parent>arm2</parent>
+        <child>horn2</child>
+        <axis>
+            <xyz>1 0 0</xyz>
+        </axis>
+    </joint>
+
+    <joint name="horn3_arm3" type="revolute">
+        <pose>0.1170032 0 0.0605 0 0 0</pose>
+        <parent>arm3</parent>
+        <child>horn3</child>
+        <axis>
+            <xyz>1 0 0</xyz>
+        </axis>
+    </joint>
+
+    <joint name="horn4_arm4" type="revolute">
+        <pose>0.027417 0 0.0604 0 0 0</pose>
+        <parent>arm4</parent>
+        <child>horn4</child>
+        <axis>
+            <xyz>1 0 0</xyz>
+        </axis>
+    </joint>
+
+    <link name="horn1">
+        <inertial>
+            <pose>1.13e-01 3.73e-02 6.49e-02</pose>
+            <mass>7.81e-04</mass>
+            <inertia> 
+                <ixx>2.69e-08</ixx>
+                <ixy>-1.49e-09</ixy>
+                <ixz>1.05e-08</ixz>
+                <iyy>3.32e-08</iyy>
+                <iyz>2.96e-09</iyz>
+                <izz>1.12e-08</izz>
+            </inertia>            
+        </inertial>
+        <visual name="visual">
+            <geometry>
+                <mesh>
+                    <uri>model://fast_ver2/meshes/collision/sg90.dae</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                    <uri>model://echo_bot/meshes/STL/sg90.stl</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="arm1">
+        <inertial>
+            <pose>1.01e-02 2.90e-02 7.27e-02</pose>
+            <mass>4.14e-03</mass>
+            <inertia> 
+                <ixx>1.57e-07</ixx>
+                <ixy>-4.43e-08</ixy>
+                <ixz>-1.03e-08</ixz>
+                <iyy>3.47e-07</iyy>
+                <iyz>4.78e-09</iyz>
+                <izz>3.17e-07</izz>
+            </inertia>            
+        </inertial>
+        <visual name="visual">
+            <geometry>
+                <mesh>
+                    <uri>model://fast_ver2/meshes/collision/arm1.dae</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                    <uri>model://echo_bot/meshes/STL/arm1.stl</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </collision>
+    </link>
+    <link name="arm2">
+        <inertial>
+            <pose>1.20e-02 2.90e-02 7.27e-02</pose>
+            <mass>4.14e-03</mass>
+            <inertia> 
+                <ixx>1.89e-07</ixx>
+                <ixy>3.74e-08</ixy>
+                <ixz>-6.32e-08</ixz>
+                <iyy>3.47e-07</iyy>
+                <iyz>2.41e-08</iyz>
+                <izz>2.85e-07</izz>
+            </inertia>            
+        </inertial>
+        <visual name="visual">
+            <geometry>
+                <mesh>
+                    <uri>model://fast_ver2/meshes/collision/arm2.dae</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                    <uri>model://echo_bot/meshes/STL/arm2.stl</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </collision>
+    </link>
+    <link name="arm3">
+        <inertial>
+            <pose>1.12e-01 1.30e-02 7.51e-02</pose>
+            <mass>4.14e-03</mass>
+            <inertia> 
+                <ixx>2.39e-07</ixx>
+                <ixy>2.73e-08</ixy>
+                <ixz>7.96e-08</ixz>
+                <iyy>3.47e-07</iyy>
+                <iyz>-3.52e-08</iyz>
+                <izz>2.35e-07</izz>
+            </inertia>            
+        </inertial>
+        <visual name="visual">
+            <geometry>
+                <mesh>
+                    <uri>model://fast_ver2/meshes/collision/arm3.dae</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                    <uri>model://echo_bot/meshes/STL/arm3.stl</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </collision>
+    </link>
+    <link name="arm4">
+        <inertial>
+            <pose>1.30e-02 1.30e-02 7.35e-02</pose>
+            <mass>4.14e-03</mass>
+            <inertia> 
+                <ixx>2.01e-07</ixx>
+                <ixy>-3.50e-08</ixy>
+                <ixz>-7.12e-08</ixz>
+                <iyy>3.47e-07</iyy>
+                <iyz>-2.76e-08</iyz>
+                <izz>2.73e-07</izz>
+            </inertia>        
+        </inertial>
+        <visual name="visual">
+            <geometry>
+                <mesh>
+                    <uri>model://fast_ver2/meshes/collision/arm4.dae</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                    <uri>model://echo_bot/meshes/STL/arm4.stl</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </collision>
+    </link>
+    
+    <link name="horn2">
+        <inertial>
+            <pose>2.74e-03 3.73e-02 6.55e-02</pose>
+            <mass>7.81e-04</mass>
+            <inertia> 
+                <ixx>3.22e-08</ixx>
+                <ixy>-0</ixy>
+                <ixz>-0</ixz>
+                <iyy>3.32e-08</iyy>
+                <iyz>3.31e-09</iyz>
+                <izz>5.97e-09</izz>
+            </inertia>            
+        </inertial>
+        <visual name="visual">
+            <geometry>
+                <mesh>
+                    <uri>model://fast_ver2/meshes/collision/motor.dae</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                    <uri>model://echo_bot/meshes/STL/motor.stl</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </collision>
+    </link>
+    <link name="horn3">
+        <inertial>
+            <pose>1.19e-01 4.66e-03 6.52e-02</pose>
+            <mass>7.81e-04</mass>
+            <inertia> 
+                <ixx>2.93e-08</ixx>
+                <ixy>-1.10e-09</ixy>
+                <ixz>-8.22e-09</ixz>
+                <iyy>3.32e-08</iyy>
+                <iyz>-3.12e-09</iyz>
+                <izz>8.87e-09</izz>
+            </inertia>          
+        </inertial>
+        <visual name="visual">
+            <geometry>
+                <mesh>
+                    <uri>model://fast_ver2/meshes/collision/motordrive.dae</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                    <uri>model://echo_bot/meshes/STL/motordrive.stl</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </collision>
+    </link>
+    <link name="horn4">
+        <inertial>
+            <pose>4.53e-03 4.66e-03 6.54e-02</pose>
+            <mass>7.81e-04</mass>
+            <inertia> 
+                <ixx>3.19e-08</ixx>
+                <ixy>3.14e-10</ixy>
+                <ixz>2.47e-09</ixz>
+                <iyy>3.32e-08</iyy>
+                <iyz>-3.30e-09</iyz>
+                <izz>6.20e-09</izz>
+            </inertia>         
+        </inertial>
+        <visual name="visual">
+            <geometry>
+                <mesh>
+                    <uri>model://fast_ver2/meshes/collision/bracket1.dae</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                    <uri>model://echo_bot/meshes/STL/bracket1.stl</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="pinion" type="revolute">
+        <pose>0.06 0.021 0. 0 0 0</pose>
+        <parent>body1</parent>
+        <child>fixed_bottom</child>
+        <axis>
+            <xyz>0 0 1</xyz>
+        </axis>
+    </joint>
+
+    <joint name="body_to_fixed_bottom" type="revolute">
+        <pose>0 0.035 0.01 0 0 0</pose>
+        <parent>body1</parent>
+        <child>fixed_bottom</child>
+        <axis>
+            <xyz>1 0 0</xyz>
+        </axis>
+    </joint>
+    
+    <link name="pinion_vevel_motor">
+        <inertial>
+            <pose>7.61e-02 2.10e-02 1.50e-02</pose>
+            <mass>1.60e-03</mass>
+            <inertia> 
+                <ixx>3.42e-08</ixx>
+                <ixy>-3.22e-10</ixy>
+                <ixz>0</ixz>
+                <iyy>3.95e-08</iyy>
+                <iyz>0</iyz>
+                <izz>3.93e-08</izz>
+            </inertia>          
+        </inertial>
+        <visual name="visual">
+            <geometry>
+                <mesh>
+                    <uri>model://fast_ver2/meshes/collision/pinion_vevel_motor.dae</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                    <uri>model://echo_bot/meshes/STL/pinion_vevel_motor.stl</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </collision>
+    </link>
+    <link name="crownn">
+        <inertial>
+            <pose>6.00e-02 2.10e-02 2.73e-02</pose>
+            <mass>8.02e-03</mass>
+            <inertia> 
+                <ixx>2.85e-07</ixx>
+                <ixy>-0</ixy>
+                <ixz>-0</ixz>
+                <iyy>6.94e-07</iyy>
+                <iyz>-1.62e-09</iyz>
+                <izz>1.26e-06</izz>
+            </inertia>            
+        </inertial>
+        <visual name="visual">
+            <geometry>
+                <mesh>
+                    <uri>model://fast_ver2/meshes/collision/crown.dae</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                    <uri>model://echo_bot/meshes/STL/crwon.stl</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </collision>
+    </link>
+    
+    
+    <link name="shatf_pinion_bearing">
+        <inertial>
+            <pose>6.00e-02 2.10e-02 3.83e-02</pose>
+            <mass>1.20e-03</mass>
+            <inertia> 
+                <ixx>8.13e-09</ixx>
+                <ixy>-0</ixy>
+                <ixz>-0</ixz>
+                <iyy>8.13e-09</iyy>
+                <iyz>0</iyz>
+                <izz>1.45e-08</izz>
+            </inertia>            
+        </inertial>
+        <visual name="visual">
+            <geometry>
+                <mesh>
+                    <uri>model://fast_ver2/meshes/collision/shatf_pinion_bearing.dae</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                    <uri>model://echo_bot/meshes/STL/shatf_pinion_bearing.stl</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </collision>
+    </link>
+    <link name="bearing_pinion_bevel">
+        <inertial>
+            <pose>6.00e-02 2.10e-02 3.85e-02</pose>
+            <mass>3.20e-03</mass>
+            <inertia> 
+                <ixx>8.13e-07</ixx>
+                <ixy>-1.37e-013</ixy>
+                <ixz>-0</ixz>
+                <iyy>2.85e-07</iyy>
+                <iyz>0</iyz>
+                <izz>6.39e-09</izz>
+            </inertia>            
+        </inertial>
+        <visual name="visual">
+            <geometry>
+                <mesh>
+                    <uri>model://fast_ver2/meshes/collision/bearing_pinion_bevel.dae</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                    <uri>model://echo_bot/meshes/STL/bearing_pinion_bevel.stl</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </collision>
+    </link>
+    <link name="pinion">
+        <inertial>
+            <pose>5.99e-02 2.10e-02 4.63e-02</pose>
+            <mass>1.99e-03</mass>
+            <inertia> 
+                <ixx>5.53e-04</ixx>
+                <ixy>2.84e-11</ixy>
+                <ixz>4.83e-10</ixz>
+                <iyy>5.49e-08</iyy>
+                <iyz>3.79e-11</iyz>
+                <izz>4.54e-08</izz>
+            </inertia>            
+        </inertial>
+        <visual name="visual">
+            <geometry>
+                <mesh>
+                    <uri>model://fast_ver2/meshes/collision/pinion.dae</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                    <uri>model://echo_bot/meshes/STL/pinion.stl</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </collision>
+    </link>
+    <link name="rack1">
+        <inertial>
+            <pose>5.93e-02 3.14e-02 4.68e-02</pose>
+            <mass>6.65e-03</mass>
+            <inertia> 
+                <ixx>6.19e-06</ixx>
+                <ixy>-0</ixy>
+                <ixz>6.46e-07</ixz>
+                <iyy>6.26e-06</iyy>
+                <iyz>0</iyz>
+                <izz>1.20e-07</izz>
+            </inertia>            
+        </inertial>
+        <visual name="visual">
+            <geometry>
+                <mesh>
+                    <uri>model://fast_ver2/meshes/collision/rack1.dae</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                    <uri>model://echo_bot/meshes/STL/rack1.stl</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </collision>
+    </link>
+    <link name="rack2">
+        <inertial>
+            <pose>6.15e-02 1.06e-02 4.68e-03</pose>
+            <mass>1.24e-01</mass>
+            <inertia> 
+                <ixx>5.07e-08</ixx>
+                <ixy>7.17e-10</ixy>
+                <ixz>-0</ixz>
+                <iyy>6.21e-06</iyy>
+                <iyz>0</iyz>
+                <izz>6.22e-06</izz>
+            </inertia>            
+        </inertial>
+        <visual name="visual">
+            <geometry>
+                <mesh>
+                    <uri>model://fast_ver2/meshes/collision/rack2.dae</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                    <uri>model://echo_bot/meshes/STL/rack2.stl</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </collision>
+    </link>
+    
+
+    </model>
+</sdf>

@@ -1,64 +1,180 @@
 <?xml version='1.0'?>
 <sdf version='1.6'>
-  <model name='ladder'>
-    <link name="rack">
-        <self_collide>1</self_collide>
+  <model name='fast_ver2'>
+	<self_collide>1</self_collide>
+
+    <link name="base">
         <inertial>
-            <mass>2.915</mass>
+            <pose>2.50e-02 -3.25e-02 7.50e-03</pose>
+            <mass>1.24e-01</mass>
+            <inertia> 
+                <ixx>2.09e-04</ixx>
+                <ixy>-0</ixy>
+                <ixz>-0</ixz>
+                <iyy>2.83e-05</iyy>
+                <iyz>0</iyz>
+                <izz>2.32e-04</izz>
+            </inertia>            
         </inertial>
         <visual name="visual">
             <geometry>
                 <mesh>
-                    <uri>model://fast_ver2/meshes/collision/rack1.dae</uri>
-                    <scale>1 1 1</scale>
-                </mesh>
+                    <uri>model://fast_ver2/meshes/collision/base.dae</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
             </geometry>
         </visual>
-        <collision name='collision'>
+        <collision name="collision">
             <geometry>
                 <mesh>
-                    <uri>model://echo_bot/meshes/STL/rack1.stl</uri>
-                    <scale>1 1 1</scale>
-                </mesh>
+                    <uri>model://echo_bot/meshes/STL/base.stl</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
             </geometry>
-            <surface>
-                <friction>
-                    <ode>
-                        <mu>0.05</mu>
-                        <mu2>0.05</mu2>
-                    </ode>
-                </friction>
-            </surface>
         </collision>
     </link>
 
-    <joint name="body_to_fixed_top" type="revolute">
-        <pose>0 0.05 0.045 0 0 0</pose>
-        <parent>shaft</parent>
-        <child>pinion</child>
+    <joint name="base_to_body1" type="fixed">
+        <pose>0 0 0.015</pose>
+        <parent>base</parent>
+        <child>body1</child>
+    </joint>
+
+    <joint name="base_to_body2" type="fixed">
+        <pose>0.020 0 0.015</pose>
+        <parent>base</parent>
+        <child>body2</child>
+    </joint>
+
+    <link name="body2">
+        <inertial>
+            <pose>2.25e-02 2.57e-02 3.10e-02</pose>
+            <mass>4.73e-02</mass>
+            <inertia> 
+                <ixx>6.57e-07</ixx>
+                <ixy>-0</ixy>
+                <ixz>-0</ixz>
+                <iyy>4.22e-07</iyy>
+                <iyz>-1.58e-08</iyz>
+                <izz>2.53e-07</izz>
+            </inertia>
+        </inertial>
+        <visual name="visual">
+            <geometry>
+                <mesh>
+                    <uri>model://fast_ver2/meshes/collision/body2.dae</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>           
+            </geometry>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                    <uri>model://echo_bot/meshes/STL/body2.stl</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="body1">
+        <self_collide>1</self_collide>
+        <inertial>
+            <pose>2.50e-03 2.25e-02 3.14e-02</pose>
+          <inertia> 
+                <ixx>2.16-06</ixx>
+                <ixy>0</ixy>
+                <ixz>0</ixz>
+                <iyy>7.03e-07</iyy>
+                <iyz>-3.66e-07</iyz>
+                <izz>1.49e-06</izz>
+            </inertia>
+            <mass>8.10e-03</mass>
+        </inertial>
+        <visual name="visual">
+            <geometry>
+                 <mesh>
+                    <uri>model://fast_ver2/meshes/collision/body1.dae</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>
+            </geometry>
+            <material>
+                <script>
+                    <uri>file://media/materials/scripts/gazebo.material</uri>
+                    <name>Gazebo/Red</name>
+                </script>
+            </material>
+        </visual>
+        <collision name='collision'>
+            <geometry>
+                 <mesh>
+                    <uri>model://echo_bot/meshes/STL/body1.stl</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>
+            </geometry>
+            <surface>
+          <friction>
+            <ode>
+              <mu>0.05</mu>
+              <mu2>0.05</mu2>
+            </ode>
+          </friction>
+        </surface>
+        </collision>
+    </link>
+
+   
+
+
+    <joint name="body_to_power_top" type="revolute">
+        <pose>0 0.02 0.03 0 0 0</pose>
+        <parent>body2</parent>
+        <child>power_top</child>
         <axis>
             <xyz>1 0 0</xyz>
         </axis>
     </joint>
+
+    <joint name="body_to_fixed_top" type="revolute">
+        <pose>0 0.05 0.045 0 0 0</pose>
+        <parent>fixed_top</parent>
+        <child>body2</child>
+        <axis>
+            <xyz>1 0 0</xyz>
+        </axis>
+    </joint>
+
     
-    <link name="pinion">
+
+    
+
+    <link name="power_top">
         <self_collide>1</self_collide>
         <inertial>
-            <mass>2.915</mass>
+            <pose>1.75e-02 2.50e-02 4.75e-02</pose>
+            <inertia> 
+                <ixx>7.55e-09</ixx>
+                <ixy>-0</ixy>
+                <ixz>-0</ixz>
+                <iyy>2.65e-09</iyy>
+                <iyz>-2.38e-09</iyz>
+                <izz>6.23e-09</izz>
+            </inertia>
+            <mass>3.19e-04</mass>
         </inertial>
         <visual name="visual">
             <geometry>
                 <mesh>
-                    <uri>model://fast_ver2/meshes/collision/pinion.dae</uri>
-                    <scale>1 1 1</scale>
+                    <uri>model://fast_ver2/meshes/collision/power_top.dae</uri>
+                    <scale>0.001 0.001 0.001</scale>
                 </mesh>
             </geometry>
         </visual>
         <collision name='collision'>
             <geometry>
                 <mesh>
-                    <uri>model://echo_bot/meshes/STL/pinion.stl</uri>
-                    <scale>1 1 1</scale>
+                    <uri>model://echo_bot/meshes/STL/power_top.stl</uri>
+                    <scale>0.001 0.001 0.001</scale>
                 </mesh>
             </geometry>
             <surface>
@@ -72,24 +188,42 @@
         </collision>
     </link>
 
-    <link name="shaft_pinion_bevel">
+    <joint name="power_top_to_connector_top" type="revolute">
+        <pose>0 0.03 0.050 0 0 0</pose>
+        <parent>power_top</parent>
+        <child>connector_top</child>
+        <axis>
+            <xyz>1 0 0</xyz>
+        </axis>
+    </joint>
+
+    <link name="connector_top">
         <self_collide>1</self_collide>
         <inertial>
-            <mass>2.915</mass>
+            <pose>1.25e-02 4e-02 6e-02</pose>
+            <inertia> 
+                <ixx>6.22e-08</ixx>
+                <ixy>-0</ixy>
+                <ixz>-0</ixz>
+                <iyy>3.26e-08</iyy>
+                <iyz>-2.98e-08</iyz>
+                <izz>3.26e-08</izz>
+            </inertia>
+            <mass>7.22e-04</mass>
         </inertial>
         <visual name="visual">
             <geometry>
                 <mesh>
-                    <uri>model://fast_ver2/meshes/collision/shaft_pinion_bevel.dae</uri>
-                    <scale>1 1 1</scale>
+                    <uri>model://fast_ver2/meshes/collision/connector_top.dae</uri>
+                    <scale>0.001 0.001 0.001</scale>
                 </mesh>
             </geometry>
         </visual>
         <collision name='collision'>
             <geometry>
                 <mesh>
-                    <uri>model://echo_bot/meshes/STL/shaft_pinion_bevel.stl</uri>
-                    <scale>1 1 1</scale>
+                    <uri>model://echo_bot/meshes/STL/connector_top.stl</uri>
+                    <scale>0.001 0.001 0.001</scale>
                 </mesh>
             </geometry>
             <surface>
@@ -102,6 +236,45 @@
             </surface>
         </collision>
     </link>
+
+<link name="shaft1">
+        <inertial>
+            <pose>2.25e-02 2.57e-02 3.10e-02</pose>
+            <mass>4.73e-02</mass>
+            <inertia> 
+                <ixx>6.57e-07</ixx>
+                <ixy>-0</ixy>
+                <ixz>-0</ixz>
+                <iyy>4.22e-07</iyy>
+                <iyz>-1.58e-08</iyz>
+                <izz>2.53e-07</izz>
+            </inertia>
+        </inertial>
+        <visual name="visual">
+            <geometry>
+                <mesh>
+                    <uri>model://fast_ver2/meshes/collision/shaft1.dae</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>           
+            </geometry>
+        </visual>
+        <collision name="collision">
+            <geometry>
+                <mesh>
+                    <uri>model://echo_bot/meshes/STL/shaft1.stl</uri>
+                    <scale>0.001 0.001 0.001</scale>
+                </mesh>            
+            </geometry>
+        </collision>
+    </link>
+    
+    
+
+    
+
      
+
+
+
   </model>
 </sdf>

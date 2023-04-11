@@ -36,19 +36,20 @@
 
     <joint name="base_to_body1" type="fixed">
         <pose>0 0 0.015</pose>
-        <parent>base</parent>
-        <child>body1</child>
+        <parent>body1</parent>
+        <child>base</child>
     </joint>
 
     <joint name="base_to_body2" type="fixed">
-        <pose>0.020 0 0.015</pose>
+        <pose>0.020 0.04 0.015</pose>
         <parent>base</parent>
         <child>body2</child>
     </joint>
 
+
     <link name="body2">
         <inertial>
-            <pose>2.25e-02 2.57e-02 3.10e-02</pose>
+            <pose>2.75e-02 2.57e-02 3.10e-02</pose>
             <mass>4.73e-02</mass>
             <inertia> 
                 <ixx>6.57e-07</ixx>
@@ -127,7 +128,7 @@
 
 
     <joint name="body_to_power_top" type="revolute">
-        <pose>0 0.02 0.03 0 0 0</pose>
+        <pose>0 0.02 0.045 0 0 0</pose>
         <parent>body2</parent>
         <child>power_top</child>
         <axis>
@@ -138,7 +139,7 @@
     <joint name="body_to_fixed_top" type="revolute">
         <pose>0 0.05 0.045 0 0 0</pose>
         <parent>fixed_top</parent>
-        <child>body2</child>
+        <child>body1</child>
         <axis>
             <xyz>1 0 0</xyz>
         </axis>
@@ -147,7 +148,7 @@
     
 
     <joint name="body_to_fixed_bottom" type="revolute">
-        <pose>0 0.035 0.01 0 0 0</pose>
+        <pose>0 0.035 0.025 0 0 0</pose>
         <parent>body1</parent>
         <child>fixed_bottom</child>
         <axis>
@@ -205,7 +206,7 @@
     </joint>
 
     <link name="connector_top">
-        <self_collide>1</self_collide>
+        <self_collide>0</self_collide>
         <inertial>
             <pose>1.25e-02 4e-02 6e-02</pose>
             <inertia> 
@@ -254,7 +255,7 @@
     </joint>
 
     <link name="connector_arm">
-        <self_collide>1</self_collide>
+        <self_collide>0</self_collide>
         <inertial>
             <pose>1.25e-02 6.75e-02 6.25e-02</pose>
             <inertia> 
@@ -278,7 +279,7 @@
         <collision name='collision'>
             <geometry>
                 <mesh>
-                    <uri>model://echo_bot/meshes/STL/connecting_arm.stl</uri>
+                    <uri>model://echo_bot/meshes/STL/connector_arm.stl</uri>
                     <scale>0.001 0.001 0.001</scale>
                 </mesh>
             </geometry>
@@ -293,26 +294,23 @@
         </collision>
     </link>
    
-   <joint name="connector_top_to_fixed_top" type="revolute">
-        <pose>0 0.05 0.070 0 0 0</pose>
+   <joint name="connector_top_to_fixed_top" type="fixed">
+        <pose>0.01 0.05 0.070 0 0 0</pose>
         <parent>connector_top</parent>
         <child>fixed_top</child>
-        <axis>
-            <xyz>1 0 0</xyz>
-        </axis>
     </joint>
 
     <link name="fixed_top">
-        <self_collide>1</self_collide>
+        <self_collide>0</self_collide>
         <inertial>
-            <pose>7.50e-02 5.00e-02 5.75e-02</pose>
+            <pose>7.50e-03 5.00e-02 5.75e-02</pose>
             <inertia> 
-                <ixx>4.53e-08</ixx>
+                 <ixx>2.16</ixx>
                 <ixy>0</ixy>
                 <ixz>0</ixz>
-                <iyy>4.54-08</iyy>
-                <iyz>0</iyz>
-                <izz>2.57e-09</izz>
+                <iyy>7.03</iyy>
+                <iyz>-3.66</iyz>
+                <izz>1.49e</izz>
             </inertia>
             <mass>6.45e-04</mass>
         </inertial>
@@ -552,6 +550,7 @@
             <xyz>1 0 0</xyz>
         </axis>
     </joint>
+
 
 
 
